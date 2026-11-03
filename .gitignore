@@ -1,0 +1,34 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 敏感配置（API Key / 密码，禁止上传）
+.env
+.env.*
+config.ini
+*.local
+
+# 模型文件（体积过大，需自行训练或下载）
+02-rf/saved/
+03-fasttext/saved/
+04-bert/saved/
+04-bert/bert-base-chinese/
+04-bert/chinese-roberta-wwm-ext/
+06-model-compression/bert_distll/saved/
+
+# 大数据文件（>100MB，GitHub 限制单文件 100MB）
+07-data/8新闻分类/news.csv
+
+# 日志
+logs/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
